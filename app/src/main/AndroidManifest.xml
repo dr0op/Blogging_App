@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dailyraven.tradebrains">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tradebrains2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tradebrains2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".FirstActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".blog"
+            android:label="@string/title_activity_blog"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".BookmarksActivity"/>
+        <activity android:name=".RequestActivity" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".AboutActivity" />
+    </application>
+
+</manifest>
